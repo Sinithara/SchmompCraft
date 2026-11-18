@@ -1,5 +1,6 @@
 package de.schmompcraft.schmomp;
 
+import de.schmompcraft.schmomp.entity.ModEntities;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -20,8 +21,8 @@ public class SchmompMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-
-		LOGGER.info("Hello Fabric world!");
+		ModEntities.initialize();
+		LOGGER.info("Schmompy Greetings!");
 	}
 
 	public static Identifier id(String path) {
